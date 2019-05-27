@@ -9,11 +9,8 @@ console.log(timeData);
 let appData = [answer,timeData];
 //console.log(appData[1]);
 
-let need = newFunction();
+let need = promt("Введите обязательную статью расходов в этом месяце");
 
 let hm = promt("Во сколько обойдется?");
 
-function newFunction() {
-    return promt("Введите обязательную статью расходов в этом месяце");
-}
 
