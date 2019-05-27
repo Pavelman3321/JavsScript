@@ -7,10 +7,11 @@ let timeData = prompt("укажите дату в стиле","ДД-ММ-ГГ");
 console.log(timeData);
 
 let appData = [answer,timeData];
-//console.log(appData[1]);
+console.log(appData[0]);
 
-let need = promt("Введите обязательную статью расходов в этом месяце");
+let expenses = prompt("Введите обязательную статью расходов в этом месяце");
 
-let hm = promt("Во сколько обойдется?");
+let optionalExpenses = prompt("Во сколько обойдется?");
 
-
+let obj = {expenses:optionalExpenses};
+console.log(obj[1]);
