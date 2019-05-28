@@ -1,17 +1,23 @@
 'use strict'
 
-let answer = prompt("какой у вас бюджет");
-console.log(answer);
+let money = prompt("какой у вас бюджет");
 
-let timeData = prompt("укажите дату в стиле","ДД-ММ-ГГ");
-console.log(timeData);
+let time = prompt("укажите дату в стиле","ДД-ММ-ГГ");
 
-let appData = [answer,timeData];
-console.log(appData[0]);
+let appData = {
 
-let expenses = prompt("Введите обязательную статью расходов в этом месяце");
+    money,
+    time,
+    expenses: {
+        "x" : "y"
+    } ,//ОБ РАС
+    optionalExpenses: {},
+    income: [],//НЕОБ РАС
+};
+let x = prompt("введите необходимую статью расходов");
 
-let optionalExpenses = prompt("Во сколько обойдется?");
+let y = prompt("во сколько обойдется?")
 
-let obj = {expenses:optionalExpenses};
-console.log(obj[1]);
+let a = (money-y)/30;
+console.log(a);
+alert("ваш бюджет на день"  +  a);
